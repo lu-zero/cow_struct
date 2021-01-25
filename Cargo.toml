@@ -1,0 +1,19 @@
+[package]
+name = "cow_struct"
+version = "0.3.1"
+authors = ["Luca Barbato <lu_zero@gentoo.org>"]
+description = "Derive a struct with clone-on-write fields"
+repository = "https://github.com/lu-zero/cow_fields"
+readme = "README.md"
+keywords = ["proc_macro", "cow"]
+license = "MIT"
+edition = "2018"
+
+[lib]
+proc-macro = true
+test = false
+
+[dependencies]
+syn = { version = "1.0", features = ["extra-traits"] }
+quote = "1.0"
+proc-macro2 = "1.0"
